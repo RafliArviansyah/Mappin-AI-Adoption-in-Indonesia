@@ -1,0 +1,62 @@
+id,date,source,title,sentiment
+0,2025-10-01,katadata.co.id,"Petugas Telah Padamkan Kebakaran Hunian Pekerja Proyek IKN, Penghuni Dipindahkan",neutral
+1,2025-10-01,katadata.co.id,"Utamakan Daya Beli Masyarakat, Tarif Listrik Tak Naik Sampai Desember 2025",neutral
+2,2025-10-01,katadata.co.id,"Serapan Anggaran MBG Baru Rp 21 T, BGN Optimistis Bisa Capai Rp 99 T Akhir Tahun",positive
+3,2025-10-01,katadata.co.id,PLN Buka Lowongan Kerja bagi Lulusan D3 sampai S2 di Seluruh Indonesia,neutral
+4,2025-10-01,katadata.co.id,"Keluarga Mahfud MD Keracunan MBG, Kepala BGN Minta Maaf",neutral
+5,2025-10-01,katadata.co.id,Rusun Hunian Pekerja Proyek IKN Terbakar,neutral
+6,2025-10-01,katadata.co.id,"DPR Usulkan Hapus Kata ‘Gratis’ pada MBG, Kepala BGN akan Tanya Prabowo",neutral
+7,2025-10-01,katadata.co.id,"Tunggu Hasil Investigasi, BGN Belum Akan Cabut Izin Dapur MBG yang Bermasalah",negative
+8,2025-10-01,katadata.co.id,Stok BBM di SPBU Shell hingga BP Habis Total Bulan Ini,negative
+9,2025-10-01,katadata.co.id,DPR Sahkan RUU BUMN di Rapat Paripurna Besok,neutral
+10,2025-10-01,katadata.co.id,KPK Tetapkan Eks Dirut PGN Hendi Prio Santoso Tersangka Kasus Jual Beli Gas,negative
+11,2025-10-01,katadata.co.id,"BP-Shell Blak-blakan Ungkap Penyebab BBM Langka di SPBU Swasta, Impor Dibatasi",neutral
+12,2025-10-01,katadata.co.id,"Israel Kembali Gempur Gaza di Tengah Rencana Perdamaian, Puluhan Warga Tewas",negative
+13,2025-10-01,katadata.co.id,BGN Tetap Akan Gunakan Makanan Ultra-Proses atau UPF di Dalam Menu MBG,negative
+14,2025-10-01,katadata.co.id,"Pemerintah akan Salurkan Bantuan Beras Fortifikasi di Akhir 2025, Apakah Itu?",positive
+15,2025-10-01,katadata.co.id,Prabowo Dikabarkan Reshuffle Lagi dan Lantik Pejabat Baru Hari Ini,neutral
+16,2025-09-25,tekno.kompas.com,"Riset Harvard Ungkap Dampak Negatif AI, Pekerja Terjebak ""Workslop""",negative
+17,2025-09-28,www.kompas.com,"Ternyata AI Juga Bisa Berhalusinasi, Seperti Apa Bentuknya?",neutral
+18,2025-09-26,tekno.kompas.com,Kenapa Foto Gemini AI Tidak Cocok dengan yang Kita Inginkan? Ini Penyebabnya,neutral
+19,2025-09-24,www.kompas.com,[HOAKS] Polisi Brasil Menyembunyikan Mayat Istrinya Selama 15 Tahun,neutral
+20,2025-09-23,tekno.kompas.com,"Bos ChatGPT Akui AI Bisa Picu PHK, Ini Pekerjaan yang Rentan Diganti AI",negative
+21,2025-09-23,www.kompas.com,"Ilusi AI: Antara Realitas, Rekayasa, dan Disinformasi",negative
+22,2025-09-23,tekno.kompas.com,"20 Contoh Kata-kata Gemini AI Foto Studio Bareng Keluarga, Tinggal “Copas”",positive
+23,2025-09-23,tekno.kompas.com,AI Ditunjuk Jadi Ketum Parpol di Jepang,neutral
+24,2025-09-20,www.kompas.com,"Tren Edit Foto dengan AI, Pakar Siber Ingatkan Risikonya: Termasuk Kemungkinan Masuk Dark Web",negative
+25,2025-09-20,tekno.kompas.com,Prompt Gemini AI Foto Prewedding Jawa ala Studio Profesional,positive
+26,2025-09-18,bandung.kompas.com,"Bapak Muda di Garut Ubah Anak-anak dari Kecanduan ""Game"" Jadi Cinta ""Coding""",positive
+27,2025-09-18,tekno.kompas.com,"Viral Gemini AI Bikin Foto Ala Studio Gaya Casual dan Stylish, Begini Promptnya",positive
+28,2025-10-01,www.kompas.com,"7 Prompt Gemini AI di Mekkah, Begini Cara Edit Foto Jadi Seolah Haji di Depan Ka'bah",positive
+29,2025-10-01,www.kompas.com,10 Prompt Gemini AI untuk Edit Foto Berdua dengan Tema Hari Batik Nasional yang Estetik,positive
+30,2025-10-01,tekno.kompas.com,"Uji Coba Edit Foto di Jepang Pakai AI Gemini Nano Banana, Hasilnya Realistis",positive
+31,2025-10-01,tekno.kompas.com,"Anthropic Rilis AI Claude Sonnet 4.5, Bisa ""Coding"" 30 Jam Nonstop",positive
+32,2025-10-01,www.kompas.com,"10 Prompt Gemini AI untuk Edit Foto Maternity Kehamilan yang Estetik, Realistis, dan Elegan",positive
+33,2025-10-01,www.kompas.com,10 Prompt Gemini AI untuk Edit Foto Berhijab dengan Tema Hari Batik Nasional yang Estetik dan Realistis,positive
+34,2025-10-01,tekno.kompas.com,"Saat Gemini AI Jadi ""Tour Guide Live"" Keliling Taman di Kichijoji Jepang",positive
+35,2025-10-01,www.kompas.com,10 Prompt Gemini AI untuk Edit Foto Tema Hari Batik Nasional dengan Berbagai Gaya,positive
+36,2025-10-01,www.kompas.com,"10 Prompt Gemini AI untuk Edit Foto Formal, Bisa Digunakan untuk CV dan Lamaran Pekerjaan",positive
+37,2025-10-01,www.kompas.com,Serikat Aktor Hollywood Kecam Keras Kemunculan Aktris AI Tilly Norwood,negative
+38,2025-10-01,www.kompas.com,"Pasang Foto Ai Bersama Glenn Fredly, Gewa: Happy Birthday In Heaven Ayah",positive
+39,2025-10-01,tekno.kompas.com,"OpenAI Rilis Sora 2, Model AI Pembuat Video Realistis yang Paham Hukum Fisika",positive
+40,2025-09-30,money.kompas.com,"Efisiensi dan Retensi, Begini Cara AI Dipakai Perusahaan di Ranah HR",positive
+41,2025-09-30,money.kompas.com,"Potensi Ekonomi Besar, Fintech dan Asuransi Garis Depan Adopsi AI",positive
+42,2025-09-28,tekno.kompas.com,"ChatGPT Pulse Dirilis, Asisten AI yang Bisa Kasih Update Harian Setiap Pagi",positive
+43,2025-09-28,nasional.kompas.com,Menlu di Dewan Keamanan PBB: Penggunaan AI Harus untuk Kemanusiaan,neutral
+44,2025-09-27,money.kompas.com,"Perusahaan Bakal Terapkan AI di Kedai Kopi, Petinggi Starbucks Mengundurkan Diri",neutral
+45,2025-09-26,www.kompas.com,Partai Politik di Jepang Usul AI jadi Pemimpin Partai Usai Kalah Pemilu,neutral
+46,2025-09-25,www.kompas.com,Rusia Dukung Seruan Trump Larang Senjata Biologis Global,neutral
+47,2025-09-25,money.kompas.com,"Indonesia Bakal Terbitkan Dua Perpres AI Sekaligus, Apa Isinya ?",positive
+48,2025-09-25,www.kompas.com,Bekerja dengan AI Membuat Orang Lebih Mudah Curang?,negative
+49,2025-09-24,tekno.kompas.com,"Bukan Cuma Satu, Inikah Deretan Gadget ChatGPT Pengganti Smartphone?",positive
+50,2025-09-24,money.kompas.com,Google: 90 Persen Pegawai Sektor Teknologi Pakai AI untuk Kerja,neutral
+51,2025-10-01,www.viva.co.id,"Pesan Menohok Ketua Tim Reformasi Polri: Jadi Polisi Harus Ada Manfaatnya, Stop Sombong!",positive
+52,2025-10-01,www.viva.co.id,"Guru Agama di SMPN Maluku Setubuhi Muridnya di Jam Sekolah, Pelaku Ditangkap Polisi",negative
+53,2025-10-01,www.viva.co.id,"Pesan Menohok Ketua Tim Reformasi Polri: Jadi Polisi Harus Ada Manfaatnya, Stop Sombong!",neutral
+54,2025-10-01,www.viva.co.id,"Guru Agama di SMPN Maluku Setubuhi Muridnya di Jam Sekolah, Pelaku Ditangkap Polisi",negative
+55,2025-10-01,lampung.viva.co.id,"Tegaskan Komitmen Jaga Ideologi, Wakapolres Tulang Bawang Pimpin Upacara Hari Kesaktian Pancasila",neutral
+56,2025-07-05,www.viva.co.id,Tsamara Amany Soroti Perubahan Cara Interaksi Generasi Muda di Tengah Perkembangan AI,positive
+57,2025-06-19,www.viva.co.id,"Tulis Pledoi di Balik Rutan, Sekjen PDIP Hasto Kristiyanto Bakal Pakai AI",neutral
+58,2025-06-18,www.viva.co.id,Artificial Intelligence di Mata Ulama dan Akademisi: Sorotan MHM di Panggung Utama IBF 2025,positive
+59,2025-06-11,www.viva.co.id,"Pramono Ungkap Jakarta Sudah Gunakan AI untuk Atur Lalu Lintas, Peringkat Kemacetan dari 30 ke 90",positive
+60,2025-04-29,www.viva.co.id,Mendikdasmen Sebut Bakal Masukkan Mata Pelajaran Coding dan AI untuk 5 SD sampai SMA,positive
