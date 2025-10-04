@@ -1,6 +1,6 @@
 # Mapping AI Adoption in Indonesia
 
-![Project Banner](([https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/assets/sector_distribution.png](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/4767b10b65e21f974199c76d1f0e3bcc401866f9/assets/insights_summary.png)))
+![Project Banner](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/assets/insights_summary.png?raw=true)
 
 ## Title Project
 Mapping AI Adoption in Indonesia Using IBM Granite for Data Classification, Summarization, and Sentiment Analysis
