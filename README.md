@@ -6,7 +6,7 @@
 Mapping AI Adoption in Indonesia Using IBM Granite for Data Classification, Summarization, and Sentiment Analysis
 
 ## Project Overview
-This capstone project, part of the Student Development Initiative under Hactiv8, aims to analyze publicly available data to derive valuable insights using AI. The focus is on mapping AI adoption in Indonesia by analyzing news articles from public sources, addressing the lack of comprehensive understanding of AI distribution across sectors (e.g., fintech, healthtech, edutech, ecommerce, manufaktur, government, other, pangan), public sentiment, and temporal trends. The project seeks to provide actionable recommendations for stakeholders, including government bodies, industries, and startups, to foster AI-driven growth in a developing economy like Indonesia.
+This project was developed by Rafli as part of the Hactiv8 & IBMSkillsBuild Data Classification and Summarization Using IBM Granite Student Development Initiative, aims to analyze publicly available data to derive valuable insights using AI. The focus is on mapping AI adoption in Indonesia by analyzing news articles from public sources, addressing the lack of comprehensive understanding of AI distribution across sectors (e.g., fintech, healthtech, edutech, ecommerce, manufaktur, government, other, pangan), public sentiment, and temporal trends. The project seeks to provide actionable recommendations for stakeholders, including government bodies, industries, and startups, to foster AI-driven growth in a developing economy like Indonesia.
 
 The approach follows a structured 5-day pipeline:
 1. **Data Collection**: Scraping news articles from sources like Katadata, DailySocial, Kompas, and Tempo using the `newspaper3k` library, with `BeautifulSoup` as a fallback for custom scraping needs.
@@ -85,4 +85,4 @@ The model is invoked via the Replicate API with a provided API token, optimized 
    - [Step 5 - Final_Report](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/Notebooks/Step%205%20-%20Final_Report.ipynb)
 
 ## Contact
-This project was developed by Rafli as part of the Hactiv8 & IBMSkillsBuild Data Classification and Summarization Using IBM Granite Student Development Initiative. Contributions are welcome via pull requests. For questions or feedback, contact fianzah43@gmail.com or open an issue on GitHub.
+Contributions are welcome via pull requests. For questions or feedback, contact fianzah43@gmail.com or open an issue on GitHub.
