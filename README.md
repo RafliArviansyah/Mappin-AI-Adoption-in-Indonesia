@@ -77,7 +77,7 @@ The model is invoked via the Replicate API with a provided API token, optimized 
 1. **Clone Repository**: `git clone https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia.git`
 2. **Open Notebook in Google Colab**: Access the main setup notebook at [notebooks/Step 1 data collection.ipynb](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/Notebooks/Step%201%20-%20data%20collection.ipynb).
 3. **Run Notebooks Sequentially**: Execute in order:  
-   - `Step 1 - data collection.ipynb`  
+   - `[Step 1 - data collection.ipynb](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/Notebooks/Step%201%20-%20data%20collection.ipynb)`  
    - `Step 2 - preprocessing and labelling.ipynb`  
    - `Step 3 - Inference_Granite_(Classification,_Summarization,_Sentiment)`  
    - `Step 4 - Analysis_&_Visualization.ipynb`  
