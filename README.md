@@ -1,90 +1,112 @@
-# Mapping AI Adoption in Indonesia
+````markdown
+# Pemetaan Adopsi AI di Indonesia
 
-![Project Banner]((https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/assets/sector_distribution.png))
+![Project Banner](https://via.placeholder.com/800x200?text=Mapping+AI+Adoption+in+Indonesia)  
+*(Gambar banner placeholder; ganti dengan visualisasi aktual dari `assets/figures/sector_distribution.png` jika tersedia)*
 
-## Title Project
-Mapping AI Adoption in Indonesia Using IBM Granite for Data Classification, Summarization, and Sentiment Analysis
+## Judul Proyek
+Pemetaan Adopsi AI di Indonesia Menggunakan IBM Granite untuk Klasifikasi Data, Ringkasan, dan Analisis Sentimen
 
-## Project Overview
-This capstone project, part of the Student Development Initiative under Hactiv8, aims to analyze publicly available data to derive valuable insights using AI. The focus is on mapping AI adoption in Indonesia by analyzing news articles from public sources, addressing the lack of comprehensive understanding of AI distribution across sectors (e.g., fintech, healthtech, edutech, ecommerce, manufaktur, government, other, pangan), public sentiment, and temporal trends. The project seeks to provide actionable recommendations for stakeholders, including government bodies, industries, and startups, to foster AI-driven growth in a developing economy like Indonesia.
+## Proyek Overview
+Proyek capstone ini, bagian dari Inisiatif Pengembangan Mahasiswa di bawah Hactiv8, bertujuan untuk menganalisis data publik yang tersedia untuk mendapatkan wawasan berharga menggunakan AI. Fokusnya adalah memetakan adopsi AI di Indonesia dengan menganalisis artikel berita dari sumber publik, mengatasi kurangnya pemahaman komprehensif tentang distribusi AI di berbagai sektor (misalnya, fintech, healthtech, edutech, ecommerce, manufaktur, pemerintahan, lainnya, pangan), sentimen publik, dan tren temporal. Proyek ini bertujuan memberikan rekomendasi yang dapat ditindaklanjuti bagi pemangku kepentingan, termasuk badan pemerintahan, industri, dan startup, untuk mendorong pertumbuhan berbasis AI di ekonomi berkembang seperti Indonesia.
 
-The approach follows a structured 5-day pipeline:
-1. **Data Collection**: Scraping news articles from sources like Katadata, DailySocial, Kompas, and Tempo using the `newspaper3k` library, with `BeautifulSoup` as a fallback for custom scraping needs.
-2. **Preprocessing & Labeling**: Text cleaning (lowercasing, removal of non-UTF8 characters, stemming with Sastrawi for Bahasa Indonesia), and manual labeling of a sample dataset (~61 articles) for validation.
-3. **AI Inference**: Leveraging IBM Granite 3.3-8B via the Replicate API for sector classification, article summarization (using chunking for long texts), and sentiment analysis (via few-shot prompting).
-4. **Analysis & Visualization**: Aggregating data (sector distribution, sentiment crosstab, time trends) and creating visualizations (bar charts, heatmaps, line charts, wordclouds) using Pandas, Matplotlib, and Seaborn.
-5. **Reporting & Finalization**: Compiling insights, recommendations, and documentation (README.md, report.md, and presentation slides).
+### Pendekatan Proyek
+Proyek ini mengikuti alur kerja selama 5 hari:
 
-The project was executed on Google Colab with GPU support for model acceleration. The dataset comprises 61 articles from 8 unique sources, collected between April 29, 2025, and October 1, 2025. The primary tech stack includes:
-- **AI/ML**: IBM Granite 3.3-8B accessed via Replicate API, utilizing few-shot inference.
-- **Data Processing**: Python 3.9+, Pandas, NumPy, Sastrawi (for Bahasa Indonesia stemming), NLTK (optional for tokenization).
-- **Data Collection**: `newspaper3k`, `requests`, `BeautifulSoup`.
-- **Visualization**: Matplotlib, Seaborn, WordCloud.
-- **Collaboration**: GitHub for repository management, Google Colab for notebooks.
+1. **Pengumpulan Data**: Mengambil artikel berita dari sumber seperti Katadata, DailySocial, Kompas, dan Tempo menggunakan pustaka `newspaper3k`, dengan `BeautifulSoup` sebagai cadangan untuk kebutuhan scraping khusus.
+2. **Pra-pemrosesan & Pelabelan**: Pembersihan teks (konversi ke huruf kecil, penghapusan karakter non-UTF8, stemming dengan `Sastrawi` untuk Bahasa Indonesia), dan pelabelan manual pada sampel dataset (~61 artikel) untuk validasi.
+3. **Inferensi AI**: Memanfaatkan IBM Granite 3.3-8B melalui Replicate API untuk klasifikasi sektor, ringkasan artikel (menggunakan teknik chunking untuk teks panjang), dan analisis sentimen (melalui pendekatan few-shot prompting).
+4. **Analisis & Visualisasi**: Mengagregasi data (distribusi sektor, crosstab sentimen, tren waktu) dan membuat visualisasi (diagram batang, heatmap, diagram garis, wordcloud) menggunakan Pandas, Matplotlib, dan Seaborn.
+5. **Pelaporan & Finalisasi**: Menyusun wawasan, rekomendasi, dan dokumentasi (README.md, report.md, dan slide presentasi).
 
-Limitations include the relatively small dataset size (target 500-1200, actual 61 due to time constraints), mitigated by prioritizing quality scraping and manual validation. This project is open-source under the MIT License (see `LICENSE` file).
+Proyek ini dijalankan di Google Colab dengan dukungan GPU untuk akselerasi model. Dataset terdiri dari 61 artikel dari 8 sumber unik, dikumpulkan antara 29 April 2025 dan 1 Oktober 2025.
 
-## Raw Dataset Link
-The raw dataset is available in this GitHub repository. File: `data/raw/articles.csv`  
-- **Description**: Contains 61 raw news articles with columns: `id`, `date`, `source`, `url`, `title`, `content`, `keywords`, `meta_description`. Total size: ~500 KB; encoded in UTF-8.
-- **Direct Link**: [data/raw/articles.csv](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/data/raw/articles_raw_cleaned.csv)  
-- **Data Sources**: Katadata.co.id, DailySocial.id, Tech blogs, Kompas, Tempo, etc. Search keywords: "AI Indonesia", "ChatGPT", "startup AI", "machine learning Indonesia", "IBM Granite".
-- **Notes**: Processed datasets (cleaned and labeled) are available at `data/processed/articles_clean.csv` and `data/processed/labeled_sample.csv` for reference.
+### Teknologi yang Digunakan
+- **AI/ML**: IBM Granite 3.3-8B diakses melalui Replicate API, menggunakan inferensi few-shot.
+- **Pemrosesan Data**: Python 3.9+, Pandas, NumPy, Sastrawi (untuk stemming Bahasa Indonesia), NLTK (opsional untuk tokenisasi).
+- **Pengumpulan Data**: newspaper3k, requests, BeautifulSoup.
+- **Visualisasi**: Matplotlib, Seaborn, WordCloud.
+- **Kolaborasi**: GitHub untuk manajemen repositori, Google Colab untuk notebook.
 
-## Insight & Findings
-Based on the analysis of 61 articles using IBM Granite via Replicate API:
-- **Sector Distribution**: The "other" sector dominates (~37.7%, 23 articles), indicating broad but unfocused AI coverage. Other sectors include:
-  | Sector       | Percentage (%) | Article Count |
-  |--------------|----------------|----------------|
-  | Other        | 37.7           | 23            |
-  | Ecommerce    | 6.6            | 4             |
-  | Fintech      | 6.6            | 4             |
-  | Healthtech   | 6.6            | 4             |
-  | Edutech      | 6.6            | 4             |
-  | Manufaktur   | 6.6            | 4             |
-  | Government   | 6.6            | 4             |
-  | Pangan       | 6.6            | 4             |
-  - **Insight**: The dominance of the "other" sector (37.7%) suggests a wide but unfocused adoption of AI, while sectors like edutech show high optimism (100% positive sentiment). Healthtech and pangan appear underrepresented, indicating potential gaps.
+### Keterbatasan
+Dataset yang digunakan relatif kecil (61 artikel) karena keterbatasan waktu. Namun, kualitas scraping dan validasi manual diprioritaskan.
 
-- **Sentiment Analysis**: Overall sentiment breakdown: 44.3% positive, 34.4% neutral, 21.3% negative. Positive sentiment is notably high in edutech (100%) and fintech, reflecting optimism for AI in education and financial sectors. Negative sentiment is more prevalent in government-related articles, possibly due to regulatory concerns.
-  - **Insight**: The positive dominance (44.3%) creates a conducive environment for broader AI adoption, though negative tones in strategic sectors highlight areas for improvement.
+## Tautan Dataset Mentah
+Dataset mentah tersedia di repositori GitHub ini. File: `data/raw/articles.csv`
 
-- **Time Trends**: Article volume increased significantly with a growth rate of +15.0% over the analysis period (April 29, 2025, to October 1, 2025), peaking in October 2025.
-  - **Insight**: This moderate growth indicates rising awareness and momentum for AI, though fluctuations suggest event-driven reporting (e.g., conferences or policy announcements).
+- **Deskripsi**: Berisi 61 artikel berita mentah dengan kolom: id, date, source, url, title, content, keywords, meta_description.
+- **Ukuran**: ~500 KB; dikodekan dalam UTF-8.
+- **Sumber Data**: Katadata.co.id, DailySocial.id, blog teknologi, Kompas, Tempo, dll.
+- **Catatan**: Dataset yang telah diproses tersedia di `data/processed/articles_clean.csv` dan `data/processed/labeled_sample.csv` untuk referensi.
 
-- **Keyword Extraction**: Top overall keywords include "foto" (243), "gemini" (106), and "jadi" (101), pointing to a focus on generative AI (e.g., image editing). Sector-specific keywords:
-  - Edutech: "edukasi", "belajar", "teknologi".
-  - Fintech: "fintech", "usaha", "transaksi".
-  - Healthtech: "kesehatan", "teknologi", "gaza" (possible misclassification).
-  - Wordcloud: Available at `assets/wordcloud_fintech.png`, `assets/wordcloud_government.png`, `assets/wordcloud_other.png`.
+## Wawasan & Temuan
+### Distribusi Sektor
+Sektor "lainnya" mendominasi (~37,7%, 23 artikel), menunjukkan cakupan AI yang luas namun tidak terfokus. Sektor lain meliputi:
 
-- **Key Visualizations**:
-  - Bar Chart: Sector distribution – [assets/figures/sector_distribution.png](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/assets/sector_distribution.png)
-  - Heatmap: Sentiment per sector – [assets/figures/sentiment_per_sector.png](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/assets/sentiment_heatmap.png)
-  - Line Chart: Time trends – [assets/figures/timeline_trends.png](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/assets/timeline_trends.png)
+| Sektor       | Persentase (%) | Jumlah Artikel |
+|--------------|----------------|----------------|
+| Lainnya      | 37,7           | 23             |
+| Ecommerce    | 6,6            | 4              |
+| Fintech      | 6,6            | 4              |
+| Healthtech   | 6,6            | 4              |
+| Edutech      | 6,6            | 4              |
+| Manufaktur   | 6,6            | 4              |
+| Pemerintahan | 6,6            | 4              |
+| Pangan       | 6,6            | 4              |
 
-**Unique Insight**: AI adoption in Indonesia is fragmented with a strong "other" presence (37.7%), while edutech leads in optimism (100% positive). The +15.0% growth and 44.3% positive sentiment suggest a promising yet uneven landscape, with potential for strategic sector development.
+### Analisis Sentimen
+Rincian sentimen keseluruhan: 44,3% positif, 34,4% netral, 21,3% negatif.
 
-## AI Support Explanation
-AI is central to this project, utilizing the IBM Granite 3.3-8B model accessed via the Replicate API (replicate.com) for relevant analytical tasks:
-- **Classification (Sector Classification)**: Employs few-shot prompting with 5 examples per label to classify articles into 8 categories (fintech, healthtech, edutech, ecommerce, manufaktur, government, other, pangan). Prompt template: "Classify the following news text into one category (must choose one): fintech, healthtech, ... Based on text: [article text]. Output only: sector". Accuracy was manually validated against a labeled sample (~61 articles).
-- **Summarization**: Summarizes long articles using a chunking technique (dividing text into 512-token chunks, summarizing each, then summarizing the summaries). Prompt: "Summarize the following text briefly, objectively, and focus on key AI-related points: [chunk text]". This addresses the model’s token limit effectively.
-- **Sentiment Analysis**: Uses few-shot prompting with positive/negative/neutral examples to classify opinions. Prompt: "Analyze the sentiment of the following text: positive (optimistic), negative (critical), or neutral (factual only). Based on text: [article text]. Output only: sentiment".
+### Tren Waktu
+Volume artikel meningkat dengan laju pertumbuhan +15,0% selama periode analisis (29 April 2025 hingga 1 Oktober 2025).
 
-The model is invoked via the Replicate API with a provided API token, optimized for Colab’s GPU environment. Limitations include potential out-of-memory (OOM) issues on free Colab tiers, mitigated by adjusting batch sizes (e.g., 15 articles) and relying on Replicate’s cloud infrastructure. Potential bias exists due to the model’s English-dominant training, though prompts were tailored for Bahasa Indonesia. No fine-tuning was performed; the focus remained on efficient inference. Results: 100% success rate on 61 articles, with outputs stored in `data/predictions/granite_predictions_complete.csv`.
+### Ekstraksi Kata Kunci
+Kata kunci utama termasuk "foto" (243), "gemini" (106), dan "jadi" (101), dengan fokus pada AI generatif.
 
-## Cara Reproduksi Proyek
-1. **Clone Repository**: `git clone https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia.git`
-2. **Open Notebook in Google Colab**: Access the main setup notebook at [notebooks/Step 1 data collection.ipynb](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/Notebooks/Step%201%20-%20data%20collection.ipynb).
-3. **Run Notebooks Sequentially**: Execute in order:  
-   - `Step 1 - data collection.ipynb`  
-   - `Step 2 - preprocessing and labelling.ipynb`  
-   - `Step 3 - Inference_Granite_(Classification,_Summarization,_Sentiment)`  
-   - `Step 4 - Analysis_&_Visualization.ipynb`  
-   - `Step 5 - Final_Report`
-4. **Install Dependencies**: Install required libraries from `requirements.txt` using `pip install -r requirements.txt` (includes `replicate`, `sastrawi`, `matplotlib`, etc.).
-5. **Configure Replicate API**: Obtain an API token from [replicate.com](https://replicate.com) and set it as an environment variable (`REPLICATE_API_TOKEN`) in Colab or a `.env` file.
-6. **Run Inference**: Ensure GPU is enabled in Colab for optimal performance.
+## Visualisasi Utama
+- **Diagram Batang**: Distribusi sektor – `assets/figures/sector_distribution.png`
+- **Heatmap**: Sentimen per sektor – `assets/figures/sentiment_per_sector.png`
+- **Diagram Garis**: Tren waktu – `assets/figures/timeline_trends.png`
+
+## Penjelasan Dukungan AI
+AI menjadi inti proyek ini, menggunakan model IBM Granite 3.3-8B yang diakses melalui Replicate API untuk tugas analitis yang relevan:
+
+1. **Klasifikasi**: Menggunakan pendekatan few-shot prompting untuk mengklasifikasikan artikel ke dalam 8 kategori (fintech, healthtech, edutech, ecommerce, manufaktur, pemerintahan, lainnya, pangan).
+2. **Ringkasan**: Merangkum artikel panjang dengan teknik chunking untuk mengatasi batas token model.
+3. **Analisis Sentimen**: Mengklasifikasikan opini ke dalam kategori positif, negatif, atau netral menggunakan pendekatan few-shot.
+
+Model dipanggil melalui Replicate API dengan token API yang disediakan, dioptimalkan untuk lingkungan GPU Colab.
+
+## Cara Mereproduksi Proyek
+1. **Kloning Repositori**: 
+   ```bash
+   git clone https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia.git
+````
+
+2. **Buka Notebook di Google Colab**:
+   Akses notebook pengaturan utama di `notebooks/Step 1 data collection.ipynb`.
+
+3. **Jalankan Notebook Secara Berurutan**: Eksekusi sesuai urutan:
+
+   * Step 1 - data collection.ipynb
+   * Step 2 - preprocessing and labelling.ipynb
+   * Step 3 - Inference_Granite_(Classification,_Summarization,_Sentiment)
+   * Step 4 - Analysis_&_Visualization.ipynb
+   * Step 5 - Final_Report
+
+4. **Instal Dependensi**:
+   Instal pustaka yang diperlukan dari `requirements.txt`:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. **Konfigurasi Replicate API**:
+   Dapatkan token API dari replicate.com dan atur sebagai variabel lingkungan (`REPLICATE_API_TOKEN`) di Colab atau file `.env`.
+
+6. **Jalankan Inferensi**:
+   Pastikan GPU diaktifkan di Colab untuk performa optimal.
 
 ## Kontribusi & Kontak
-This project was developed by Rafli as part of the Hactiv8 Student Development Initiative. Contributions are welcome via pull requests. For questions or feedback, contact fianzah43@gmail.com or open an issue on GitHub.
+
+Proyek ini dikembangkan oleh Rafli sebagai bagian dari Inisiatif Pengembangan Mahasiswa Hactiv8. Kontribusi diterima melalui pull request. Untuk pertanyaan atau umpan balik, hubungi [fianzah43@gmail.com](mailto:fianzah43@gmail.com) atau buka isu di GitHub.
