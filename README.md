@@ -1,7 +1,6 @@
 # Mapping AI Adoption in Indonesia
 
-![Project Banner](https://via.placeholder.com/800x200?text=Mapping+AI+Adoption+in+Indonesia)  
-*(Gambar banner placeholder; ganti dengan visualisasi aktual dari `assets/figures/sector_distribution.png` jika tersedia)*
+![Project Banner]([https://via.placeholder.com/800x200?text=Mapping+AI+Adoption+in+Indonesia](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/assets/sector_distribution.png))
 
 ## Title Project
 Mapping AI Adoption in Indonesia Using IBM Granite for Data Classification, Summarization, and Sentiment Analysis
@@ -28,7 +27,7 @@ Limitations include the relatively small dataset size (target 500-1200, actual 6
 ## Raw Dataset Link
 The raw dataset is available in this GitHub repository. File: `data/raw/articles.csv`  
 - **Description**: Contains 61 raw news articles with columns: `id`, `date`, `source`, `url`, `title`, `content`, `keywords`, `meta_description`. Total size: ~500 KB; encoded in UTF-8.
-- **Direct Link**: [data/raw/articles.csv](https://github.com/[your-username]/mapping-ai-adoption-id/blob/main/data/raw/articles.csv)  
+- **Direct Link**: [data/raw/articles.csv](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/data/raw/articles_raw_cleaned.csv)  
   (Replace `[your-username]` with your GitHub username.)
 - **Data Sources**: Katadata.co.id, DailySocial.id, Tech blogs, Kompas, Tempo, etc. Search keywords: "AI Indonesia", "ChatGPT", "startup AI", "machine learning Indonesia", "IBM Granite".
 - **Notes**: Processed datasets (cleaned and labeled) are available at `data/processed/articles_clean.csv` and `data/processed/labeled_sample.csv` for reference.
@@ -59,9 +58,9 @@ Based on the analysis of 61 articles using IBM Granite via Replicate API:
   - Wordcloud: Available at `assets/figures/wordcloud.png`.
 
 - **Key Visualizations**:
-  - Bar Chart: Sector distribution – [assets/figures/sector_distribution.png](https://github.com/[your-username]/mapping-ai-adoption-id/blob/main/assets/figures/sector_distribution.png)
-  - Heatmap: Sentiment per sector – [assets/figures/sentiment_per_sector.png](https://github.com/[your-username]/mapping-ai-adoption-id/blob/main/assets/figures/sentiment_per_sector.png)
-  - Line Chart: Time trends – [assets/figures/timeline_trends.png](https://github.com/[your-username]/mapping-ai-adoption-id/blob/main/assets/figures/timeline_trends.png)
+  - Bar Chart: Sector distribution – [assets/figures/sector_distribution.png](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/assets/sector_distribution.png)
+  - Heatmap: Sentiment per sector – [assets/figures/sentiment_per_sector.png](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/assets/sentiment_heatmap.png)
+  - Line Chart: Time trends – [assets/figures/timeline_trends.png](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/assets/timeline_trends.png)
 
 **Unique Insight**: AI adoption in Indonesia is fragmented (dominance of "other"), with a gap between positive public sentiment and actual industry implementation. Findings are logically derived from Pandas aggregation and visualizations, though limited by the small dataset size—expansion is recommended for robustness.
 
@@ -75,7 +74,7 @@ The model is invoked via the Replicate API with a provided API token, optimized 
 
 ## Cara Reproduksi Proyek
 1. **Clone Repository**: `git clone https://github.com/[your-username]/mapping-ai-adoption-id.git`
-2. **Open Notebook in Google Colab**: Access the main setup notebook at [notebooks/00_setup.ipynb](https://colab.research.google.com/github/[your-username]/mapping-ai-adoption-id/blob/main/notebooks/00_setup.ipynb).
+2. **Open Notebook in Google Colab**: Access the main setup notebook at [notebooks/Step 1 data collection.ipynb](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/Notebooks/Step%201%20-%20data%20collection.ipynb).
 3. **Run Notebooks Sequentially**: Execute in order:  
    - `Step 1 - data collection.ipynb`  
    - `Step 2 - preprocessing and labelling.ipynb`  
@@ -89,6 +88,3 @@ The model is invoked via the Replicate API with a provided API token, optimized 
 
 ## Kontribusi & Kontak
 This project was developed by Rafli as part of the Hactiv8 Student Development Initiative. Contributions are welcome via pull requests. For questions or feedback, contact fianzah43@gmail.com or open an issue on GitHub.
-
-Last updated: October 04, 2025, 07:41 AM WIB.
-
