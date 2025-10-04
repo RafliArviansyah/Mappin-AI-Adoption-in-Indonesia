@@ -22,7 +22,7 @@ The project was executed on Google Colab with GPU support for model acceleration
 - **Visualization**: Matplotlib, Seaborn, WordCloud.
 - **Collaboration**: GitHub for repository management, Google Colab for notebooks.
 
-Limitations include the relatively small dataset size (target 500-1200, actual 61 due to time constraints), mitigated by prioritizing quality scraping and manual validation. This project is open-source under the MIT License (see `LICENSE` file).
+Limitations include the relatively small dataset size (target 500-1200, actual 61 due to time constraints), mitigated by prioritizing quality scraping and manual validation.
 
 ## Raw Dataset Link
 The raw dataset is available in this GitHub repository. File: `data/raw/articles_raw.csv`  
@@ -59,9 +59,9 @@ Based on the analysis of 61 articles using IBM Granite via Replicate API:
   - Wordcloud: Available at `assets/wordcloud.png`.
 
 - **Key Visualizations**:
-  - Bar Chart: Sector distribution – [assets/sector_distribution.png](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/assets/sector_distribution.png)
-  - Heatmap: Sentiment per sector – [assets/sentiment_per_sector.png](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/assets/sentiment_heatmap.png)
-  - Line Chart: Time trends – [assets/timeline_trends.png](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/assets/timeline_trends.png)
+  - Bar Chart: Sector distribution – [assets/sector_distribution.png](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/assets/sector_distribution.png?raw=true)
+  - Heatmap: Sentiment per sector – [assets/sentiment_heatmap.png](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/assets/sentiment_heatmap.png?raw=true)
+  - Line Chart: Time trends – [assets/timeline_trends.png](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/assets/timeline_trends.png?raw=true)
 
 **Unique Insight**: AI adoption in Indonesia is fragmented with a strong "other" presence (37.7%), while edutech leads in optimism (100% positive). The +15.0% growth and 44.3% positive sentiment suggest a promising yet uneven landscape, with potential for strategic sector development.
 
