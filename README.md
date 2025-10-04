@@ -25,7 +25,7 @@ The project was executed on Google Colab with GPU support for model acceleration
 Limitations include the relatively small dataset size (target 500-1200, actual 61 due to time constraints), mitigated by prioritizing quality scraping and manual validation. This project is open-source under the MIT License (see `LICENSE` file).
 
 ## Raw Dataset Link
-The raw dataset is available in this GitHub repository. File: `data/raw/articles.csv`  
+The raw dataset is available in this GitHub repository. File: `data/raw/articles_raw.csv`  
 - **Description**: Contains 61 raw news articles with columns: `id`, `date`, `source`, `url`, `title`, `content`, `keywords`, `meta_description`. Total size: ~500 KB; encoded in UTF-8.
 - **Direct Link**: [data/raw/articles.csv](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/data/raw/articles_raw_cleaned.csv)  
 - **Data Sources**: Katadata.co.id, DailySocial.id, Tech blogs, Kompas, Tempo, etc. Search keywords: "AI Indonesia", "ChatGPT", "startup AI", "machine learning Indonesia", "IBM Granite".
@@ -56,7 +56,7 @@ Based on the analysis of 61 articles using IBM Granite via Replicate API:
   - Edutech: "edukasi", "belajar", "teknologi".
   - Fintech: "fintech", "usaha", "transaksi".
   - Healthtech: "kesehatan", "teknologi", "gaza" (possible misclassification).
-  - Wordcloud: Available at `assets/figures/wordcloud.png`.
+  - Wordcloud: Available at `assets/wordcloud.png`.
 
 - **Key Visualizations**:
   - Bar Chart: Sector distribution – [assets/figures/sector_distribution.png](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/assets/sector_distribution.png)
@@ -73,7 +73,7 @@ AI is central to this project, utilizing the IBM Granite 3.3-8B model accessed v
 
 The model is invoked via the Replicate API with a provided API token, optimized for Colab’s GPU environment. Limitations include potential out-of-memory (OOM) issues on free Colab tiers, mitigated by adjusting batch sizes (e.g., 15 articles) and relying on Replicate’s cloud infrastructure. Potential bias exists due to the model’s English-dominant training, though prompts were tailored for Bahasa Indonesia. No fine-tuning was performed; the focus remained on efficient inference. Results: 100% success rate on 61 articles, with outputs stored in `data/predictions/granite_predictions_complete.csv`.
 
-## Cara Reproduksi Proyek
+## How to Run the Project
 1. **Clone Repository**: `git clone https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia.git`
 2. **Open Notebook in Google Colab**: Access the main setup notebook at [notebooks/Step 1 data collection.ipynb](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/Notebooks/Step%201%20-%20data%20collection.ipynb).
 3. **Run Notebooks Sequentially**: Execute in order:  
@@ -82,9 +82,8 @@ The model is invoked via the Replicate API with a provided API token, optimized 
    - `Step 3 - Inference_Granite_(Classification,_Summarization,_Sentiment)`  
    - `Step 4 - Analysis_&_Visualization.ipynb`  
    - `Step 5 - Final_Report`
-4. **Install Dependencies**: Install required libraries from `requirements.txt` using `pip install -r requirements.txt` (includes `replicate`, `sastrawi`, `matplotlib`, etc.).
-5. **Configure Replicate API**: Obtain an API token from [replicate.com](https://replicate.com) and set it as an environment variable (`REPLICATE_API_TOKEN`) in Colab or a `.env` file.
-6. **Run Inference**: Ensure GPU is enabled in Colab for optimal performance.
+4. **Configure Replicate API**: Obtain an API token from [replicate.com](https://replicate.com) and set it as an environment variable (`REPLICATE_API_TOKEN`) in Colab or a `.env` file.
+5. **Run Inference**: Ensure GPU is enabled in Colab for optimal performance.
 
-## Kontribusi & Kontak
+## Contact
 This project was developed by Rafli as part of the Hactiv8 Student Development Initiative. Contributions are welcome via pull requests. For questions or feedback, contact fianzah43@gmail.com or open an issue on GitHub.
