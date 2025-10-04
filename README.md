@@ -56,8 +56,7 @@ Based on the analysis of 61 articles using IBM Granite via Replicate API:
   - Edutech: "edukasi", "belajar", "teknologi".
   - Fintech: "fintech", "usaha", "transaksi".
   - Healthtech: "kesehatan", "teknologi", "gaza" (possible misclassification).
-  - Wordcloud: Available at `assets/wordcloud.png`.
-
+  - Wordcloud: Available at `assets/wordcloud_fintech.png`, `assets/wordcloud_government.png`, `assets/wordcloud_other.png`
 - **Key Visualizations**:
   - Bar Chart: Sector distribution – [assets/sector_distribution.png](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/assets/sector_distribution.png)
   - Heatmap: Sentiment per sector – [assets/sentiment_heatmap.png](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/assets/sentiment_heatmap.png)
