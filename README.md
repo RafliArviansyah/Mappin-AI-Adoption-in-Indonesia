@@ -74,16 +74,15 @@ AI is central to this project, utilizing the IBM Granite 3.3-8B model accessed v
 The model is invoked via the Replicate API with a provided API token, optimized for Colab’s GPU environment. Limitations include potential out-of-memory (OOM) issues on free Colab tiers, mitigated by adjusting batch sizes (e.g., 15 articles) and relying on Replicate’s cloud infrastructure. Potential bias exists due to the model’s English-dominant training, though prompts were tailored for Bahasa Indonesia. No fine-tuning was performed; the focus remained on efficient inference. Results: 100% success rate on 61 articles, with outputs stored in `data/predictions/granite_predictions_complete.csv`.
 
 ## How to Run the Project
-1. **Clone Repository**: `git clone https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia.git`
+1. **Configure Replicate API**: Obtain an API token from [replicate.com](https://replicate.com) and set it as an environment variable (`REPLICATE_API_TOKEN`) in Colab.
 2. **Open Notebook in Google Colab**: Access the main setup notebook at [notebooks/Step 1 data collection.ipynb](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/Notebooks/Step%201%20-%20data%20collection.ipynb).
-3. **Run Notebooks Sequentially**: Execute in order:  
+3. **Run Inference**: Ensure GPU is enabled in Colab for optimal performance.
+4. **Run Notebooks Sequentially**: Execute in order:  
    - [Step 1 - data collection.ipynb](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/Notebooks/Step%201%20-%20data%20collection.ipynb)  
    - [Step 2 - preprocessing and labelling.ipynb](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/Notebooks/Step%202%20-%20preprocessing%20and%20labelling.ipynb) 
    - [Step 3 - Inference_Granite_Classification,_Summarization,_Sentiment](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/Notebooks/Step%203%20-%20Inference_Granite_(Classification%2C_Summarization%2C_Sentiment).ipynb)
    - [Step 4 - Analysis_&_Visualization.ipynb](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/Notebooks/Step%204%20-%20Analysis_%26_Visualization.ipynb)  
    - [Step 5 - Final_Report](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/Notebooks/Step%205%20-%20Final_Report.ipynb)
-4. **Configure Replicate API**: Obtain an API token from [replicate.com](https://replicate.com) and set it as an environment variable (`REPLICATE_API_TOKEN`) in Colab or a `.env` file.
-5. **Run Inference**: Ensure GPU is enabled in Colab for optimal performance.
 
 ## Contact
 This project was developed by Rafli as part of the Hactiv8 Student Development Initiative. Contributions are welcome via pull requests. For questions or feedback, contact fianzah43@gmail.com or open an issue on GitHub.
