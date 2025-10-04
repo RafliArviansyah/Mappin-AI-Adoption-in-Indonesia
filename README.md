@@ -85,4 +85,4 @@ The model is invoked via the Replicate API with a provided API token, optimized 
    - [Step 5 - Final_Report](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/Notebooks/Step%205%20-%20Final_Report.ipynb)
 
 ## Contact
-This project was developed by Rafli as part of the Hactiv8 Student Development Initiative. Contributions are welcome via pull requests. For questions or feedback, contact fianzah43@gmail.com or open an issue on GitHub.
+This project was developed by Rafli as part of the Hactiv8 & IBMSkillsBuild Data Classification and Summarization Using IBM Granite Student Development Initiative. Contributions are welcome via pull requests. For questions or feedback, contact fianzah43@gmail.com or open an issue on GitHub.
