@@ -73,7 +73,7 @@ AI menjadi bagian utama dalam proyek ini, menggunakan model IBM Granite 3.3-8B y
 Model dipanggil melalui Replicate API dengan token API yang disediakan, dioptimalkan untuk lingkungan GPU di Colab. Keterbatasan termasuk masalah kehabisan memori (OOM) pada tier gratis Colab, diatasi dengan menyesuaikan ukuran batch (misalnya, 15 artikel) dan mengandalkan infrastruktur cloud Replicate. Potensi bias ada karena pelatihan model yang didominasi bahasa Inggris, meskipun prompt disesuaikan untuk Bahasa Indonesia. Tidak ada fine-tuning yang dilakukan; fokus pada inferensi yang efisien. Hasil: Tingkat keberhasilan 100% pada 61 artikel, dengan output disimpan di `data/predictions/granite_predictions_complete_20251003_094126.csv`.
 
 ## How to Run the Project
-1. **Konfigurasi Replicate API:**: Dapatkan token API dari [replicate.com](https://replicate.com) dan atur sebagai variabel lingkungan (`REPLICATE_API_TOKEN`) di Colab.
+1. **Konfigurasi Replicate API:** Dapatkan token API dari [replicate.com](https://replicate.com) dan atur sebagai variabel lingkungan (`REPLICATE_API_TOKEN`) di Colab.
 2. **Buka Notebook di Google Colab**: Akses notebook pengaturan utama di [notebooks/Step 1 data collection.ipynb](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/Notebooks/Step%201%20-%20data%20collection.ipynb).
 3. **Run Inference**: Pastikan GPU diaktifkan di Colab untuk performa optimal.
 4. **Run Notebooks Sequentially**: Eksekusi sesuai urutan:
