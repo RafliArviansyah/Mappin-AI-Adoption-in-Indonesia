@@ -15,7 +15,7 @@ The approach follows a structured 5-day pipeline:
 4. **Analysis & Visualization**: Menggabungkan data (sebaran sektor, tabel silang sentimen, tren waktu) dan membuat visualisasi (diagram batang, heatmap, diagram garis, wordcloud) menggunakan Pandas, Matplotlib, dan Seaborn.
 5. **Reporting & Finalization**: enyusun wawasan, rekomendasi, dan dokumentasi (README.md dan slide presentasi).
 
-Proyek ini dijalankan di Google Colab dengan dukungan GPU untuk mempercepat model. Dataset terdiri dari 61 artikel dari 8 sumber berbeda, dikumpulkan antara 29 April 2025 dan 1 Oktober 2025. Teknologi utama yang digunakan meliputi:
+Proyek ini dijalankan di Google Colab dengan dukungan GPU untuk mempercepat model. Dataset terdiri dari 62 artikel dari 8 sumber berbeda, dikumpulkan antara 29 April 2025 dan 1 Oktober 2025. Teknologi utama yang digunakan meliputi:
 - **AI/ML**: IBM Granite 3.3-8B diakses melalui Replicate API dengan metode few-shot inference.
 - **Data Processing**: Python 3.9+, Pandas, NumPy, Sastrawi (for Bahasa Indonesia stemming), NLTK (opsional untuk tokenization).
 - **Data Collection**: `newspaper3k`, `requests`, `BeautifulSoup`.
@@ -27,12 +27,12 @@ Keterbatasan proyek ini adalah ukuran dataset yang kecil (target 500-1200 artike
 ## Raw Dataset Link
 The raw dataset is available in this GitHub repository. File: `data/raw/articles_raw.csv`  
 - **Description**: Berisi 61 artikel berita mentah dengan kolom: `id`, `date`, `source`, `url`, `title`, `content`, `keywords`, `meta_description`. Total size: ~500 KB; encoded in UTF-8.
-- **Direct Link**: [data/raw/articles.csv](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/data/raw/articles_raw_cleaned.csv)  
+- **Direct Link**: [data/raw/articles_raw.csv](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/data/raw/articles_raw_cleaned.csv)  
 - **Data Sources**: Katadata.co.id, DailySocial.id, Tech blogs, Kompas, Tempo, etc. Search keywords: "AI Indonesia", "ChatGPT", "startup AI", "machine learning Indonesia", "IBM Granite".
 - **Notes**: Dataset yang sudah diproses (dibersihkan dan diberi label) tersedia di `data/processed/articles_clean.csv` and `data/processed/labeled_sample.csv` for reference.
 
 ## Insight & Findings
-Berdasarkan analisis 61 artikel menggunakan IBM Granite melalui Replicate API:
+Berdasarkan analisis 62 artikel menggunakan IBM Granite melalui Replicate API:
 - **Sector Distribution**: Sektor "lainnya" mendominasi (~37,7%, 23 artikel), menunjukkan liputan AI yang luas tetapi kurang terfokus. Sektor lain meliputi:
   | Sector       | Percentage (%) | Article Count |
   |--------------|----------------|----------------|
