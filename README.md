@@ -15,7 +15,7 @@ The approach follows a structured 5-day pipeline:
 4. **Analysis & Visualization**: Menggabungkan data (sebaran sektor, tabel silang sentimen, tren waktu) dan membuat visualisasi (diagram batang, heatmap, diagram garis, wordcloud) menggunakan Pandas, Matplotlib, dan Seaborn.
 5. **Reporting & Finalization**: enyusun wawasan, rekomendasi, dan dokumentasi (README.md dan slide presentasi).
 
-Proyek ini dijalankan di Google Colab dengan dukungan GPU untuk mempercepat model. Dataset terdiri dari 62 artikel dari 8 sumber berbeda, dikumpulkan antara 29 April 2025 dan 1 Oktober 2025. Teknologi utama yang digunakan meliputi:
+Proyek ini dijalankan di Google Colab dengan dukungan GPU untuk mempercepat model. Dataset terdiri dari 61 artikel dari 8 sumber berbeda, dikumpulkan antara 29 April 2025 dan 1 Oktober 2025. Teknologi utama yang digunakan meliputi:
 - **AI/ML**: IBM Granite 3.3-8B diakses melalui Replicate API dengan metode few-shot inference.
 - **Data Processing**: Python 3.9+, Pandas, NumPy, Sastrawi (for Bahasa Indonesia stemming), NLTK (opsional untuk tokenization).
 - **Data Collection**: `newspaper3k`, `requests`, `BeautifulSoup`.
