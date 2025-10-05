@@ -27,7 +27,7 @@ Keterbatasan proyek ini adalah ukuran dataset yang kecil (target 500-1200 artike
 ## Raw Dataset Link
 The raw dataset is available in this GitHub repository. File: `data/raw/articles_raw.csv`  
 - **Description**: Berisi 61 artikel berita mentah dengan kolom: `id`, `date`, `source`, `url`, `title`, `content`, `keywords`, `meta_description`. Total size: ~500 KB; encoded in UTF-8.
-- **Direct Link**: [data/raw/articles_raw.csv](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/data/raw/articles_raw_cleaned.csv)  
+- **Direct Link**: [data/raw/articles_raw_cleaned.csv](https://github.com/RafliArviansyah/Mapping-AI-Adoption-in-Indonesia/blob/main/data/raw/articles_raw_cleaned.csv)  
 - **Data Sources**: Katadata.co.id, DailySocial.id, Tech blogs, Kompas, Tempo, etc. Search keywords: "AI Indonesia", "ChatGPT", "startup AI", "machine learning Indonesia", "IBM Granite".
 - **Notes**: Dataset yang sudah diproses (dibersihkan dan diberi label) tersedia di `data/processed/articles_clean.csv` and `data/processed/labeled_sample.csv` for reference.
 
