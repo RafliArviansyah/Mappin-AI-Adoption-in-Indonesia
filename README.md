@@ -8,7 +8,7 @@ Pemetaan Penggunaan AI di Indonesia dengan IBM Granite untuk Data Classification
 ## Project Overview
 Proyek ini dibuat oleh Rafli sebagai bagian dari inisiatif Hactiv8 & IBMSkillsBuild untuk klasifikasi dan ringkasan data menggunakan IBM Granite. Tujuannya adalah menganalisis data publik untuk mendapatkan wawasan berharga dengan bantuan AI. Proyek ini fokus pada pemetaan penggunaan AI di Indonesia dengan menganalisis artikel berita dari sumber publik, untuk memahami sebaran AI di berbagai sektor (seperti fintech, healthtech, edutech, ecommerce, manufaktur, pemerintahan, pangan, dan lainnya), sentimen publik, serta tren waktu. Proyek ini ingin memberikan rekomendasi yang bermanfaat bagi pemerintah, industri, dan startup untuk mendukung pertumbuhan berbasis AI di Indonesia, sebagai negara berkembang.
 
-The approach follows a structured 5-day pipeline:
+The approach follows a structured 5 Step pipeline:
 1. **Data Collection**: Mengambil artikel berita dari sumber seperti Katadata, DailySocial, Kompas, dan Tempo menggunakan pustaka `newspaper3k` library, dengan `BeautifulSoup` sebagai cadangan untuk kebutuhan pengambilan data khusus.
 2. **Preprocessing & Labeling**: Membersihkan teks (mengubah ke huruf kecil, menghapus karakter non-UTF8, dan stemming menggunakan Sastrawi untuk Bahasa Indonesia), serta memberi label manual pada sampel data (~61 artikel) untuk validasi.
 3. **AI Inference**: Menggunakan IBM Granite 3.3-8B melalui Replicate API untuk mengklasifikasi sektor, meringkas artikel (dengan teknik chunking untuk teks panjang), dan menganalisis sentimen (menggunakan pendekatan few-shot prompting).
